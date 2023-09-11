@@ -1,8 +1,8 @@
-const ListItem = () => {
+const ListItem = ({item}:any) => {
+    const  {name,itcom}=item;
     return (
         <>
-            <li>Hit the gym</li>
-            <li>My Name SaifUllah</li>
+            <li className={itcom?"checked":""}>{name}</li>
         </>
     )
 
